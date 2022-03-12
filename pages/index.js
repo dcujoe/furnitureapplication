@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="furniture from Bonn" content="Best furniture in Bonn" />
         <link rel="icon" href="/static/images/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet"></link>
      
       </Head>

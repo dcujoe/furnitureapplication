@@ -13,8 +13,8 @@ export default function NavBar() {
     <>
         
         <nav className="navbar">
-          <div class="navbar-wrapper">
-            <div class="navbrand">
+          <div className="navbar-wrapper">
+            <div className="navbrand">
             <Image 
                 src="/vercel.svg"
                 style={{ color: "#000", marginLeft: "30px" }}
