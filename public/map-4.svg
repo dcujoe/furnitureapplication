@@ -1,0 +1,10 @@
+    <!-- simple dot marker definition -->
+    <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+        markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="5" fill="red"/>
+    </marker>
+  </defs>
+
+  <!-- Data line with polymarkers -->
+  <polyline points="15,80 29,50 43,60 57,30 71,40 85,15" fill="none" stroke="grey"
+   marker-start="url(#dot)" marker-mid="url(#dot)"  marker-end="url(#dot)"/>

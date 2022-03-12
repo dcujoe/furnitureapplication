@@ -1,16 +1,355 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 1.4;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: #000;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --color-primary: rgba(255, 255, 255);
+    --color-secondary: rgb(235, 214, 214);
+    --color-added: #d4e9e2;
+    --color-dark: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+section a {
+    display: grid;
+    color: var(--color-primary);
+}
+
+Image {
+    max-width: 100%;
+}
+
+
+/* Navbar section */
+
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    height: 50px;
+}
+
+.navbrand .nav-image {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Buttons right of Navbar */
+
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-right .right-image {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Buttons left of Navbar */
+
+.navbar-left {
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.navbar-right li:first-child a {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 400px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* hamburger menu*/
+
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px black solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-darkoutline {
+    border-color: #000;
+    color: #000;
+}
+
+.btn-darkoutline:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.btn-light-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+
+/* Background classes */
+
+.bg-primary {
+    background-color: var(--color-secondary);
+}
+
+.bg-secondary {
+    background-color: var(--color-primary);
+}
+
+.bg-extra {
+    background-color: var(--color-secondary);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+}
+
+
+/* text styling */
+
+.text-center {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.text-lg {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-md {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+
+/* padding styles of utility classes*/
+
+
+/* padding top and bottom 20px */
+
+.py-sm {
+    padding: 10px 0;
+}
+
+
+/* padding top and bottom 20px */
+
+.py-md {
+    padding: 20px 0;
+}
+
+
+/* padding top and bottom 40px */
+
+.py-lg {
+    padding: 40px 0;
+}
+
+
+/* media query on small screens */
+
+
+/* hamburger menu*/
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+@media (max-width: 768px) {
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+    .reverse-grid :first-child {
+        order: 0;
+    }
+    .navbrand {
+        width: 40px;
+        height: 40px;
+    }
+    .nav {
+        width: 80%;
+    }
+    .navbar .navbar-left,
+    .navbar .navbar-right {
+        display: none;
+    }
+    .footer {
+        text-align: center;
+    }
+}
+
+@media(max-width: 960px) {
+    .text-xl {
+        font-size: 30px;
+    }
+    .text-lg {
+        font-size: 25px;
+    }
+    .text-md {
+        font-size: 19px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .box {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+/*  box styling */
+
+.box {
+    margin-bottom: 30px;
+}
+
+.box-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.box-text {
+    max-width: 500px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.box-text .btn {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.box-f .box-text {
+    max-width: 600px;
+}
+
+
+/*  Grid styles */
+
+
+/* center the columns in grid format */
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reverse-grid :first-child {
+    order: 2;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
 }
