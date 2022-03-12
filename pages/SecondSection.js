@@ -11,6 +11,7 @@ export default function SecondSection() {
         src="/pic1.jpeg" 
         width={1440}
         height={800}
+        alt="navimage"
         />
          <div className="box-text">
              <h2 className="text-md">Products newly added</h2>
@@ -26,6 +27,7 @@ export default function SecondSection() {
         src="/pic2.jpeg" 
         width={1440}
         height={800}
+        alt="sectionimage"
         />
          <div className="box-text">
          <h2 className="text-md">Products newly added</h2>
@@ -41,6 +43,7 @@ export default function SecondSection() {
         src="/pic2.jpeg" 
         width={1440}
         height={800}
+        alt="sectionimage"
         />
          <div className="box-text">
          <h2 className="text-md">Products newly added</h2>
@@ -56,6 +59,7 @@ export default function SecondSection() {
         src="/pic3.jpeg" 
         width={1440}
         height={800}
+        alt="sectionimage"
         />
          <div className="box-text">
          <h2 className="text-md">Products newly added</h2>
@@ -73,6 +77,7 @@ export default function SecondSection() {
         src="/pic6.jpeg" 
         width={1440}
         height={800}
+        alt="sectionimage"
         />
           <div className="bg-primary py-lg">
         <div className="box-text">
@@ -87,6 +92,7 @@ export default function SecondSection() {
         src="/pic7.jpeg" 
         width={1440}
         height={800}
+        alt="sectionimage"
         />
         <div className=" bg-primary py-lg">
         <div className="box-text">
